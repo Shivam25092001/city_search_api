@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+.courses-container {
+	z-index: +5;
+	margin-left: 0.5rem;
+}
+.courses-container:hover{
+	margin-left: 0.8rem;
+	transition: all 0.5s ease-in-out;
+}
+
+.course {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	max-width: 100%;
+	margin: 20px;
+	overflow: hidden;
+	width: 700px;
+	z-index: +5;
+}
+.course:hover{
+	box-shadow: 0 10px 12px rgba(0, 0, 0, 0.425);
+}
+
+.course h2 {
+	letter-spacing: 1px;
+	margin: 10px 0;
+    padding: 2rem 0;
+}
+
+.course-preview {
+	background-color: #203864;
+	color: #fff;
+	padding: 30px;
+	width: 250px;
+	z-index: +5;
+}
+
+
+
+.course-preview a {
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	opacity: 0.6;
+	margin-top: 30px;
+	text-decoration: none;
+}
+
+
+.course-info {
+	padding: 30px;
+	position: relative;
+	width: 100%;
+	background-color: white;
+	z-index: +5;
+}
+
+.progress-container {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	text-align: right;
+	width: 100%;
+	z-index: +5;
+}
+
+.progress {
+	background-color: #ddd;
+	border-radius: 3px;
+	height: 5px;
+	width: 100%;
+}
+
+.progress::after {
+	border-radius: 3px;
+	background-color: #203864;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 5px;
+	width: 90%;
+}
+
+
+
