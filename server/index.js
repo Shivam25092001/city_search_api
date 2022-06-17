@@ -21,7 +21,7 @@ app.get("*", (req, res)=>{
 
 
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 8080;
 
 app.listen(port, ()=> console.log(`Listening on http://localhost:${port}`));
 
