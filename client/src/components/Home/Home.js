@@ -11,8 +11,8 @@ const Home = () => {
   const fetchData = async (keyword) => {
     const { data } =
       (keyword !== undefined)
-        ? await axios.get(`http://localhost:8080/api/cities?keyword=${keyword}`)
-        : await axios.get(`http://localhost:8080/api/cities`);
+        ? await axios.get(`https://city-api-2022.herokuapp.com/api/cities?keyword=${keyword}`)
+        : await axios.get(`https://city-api-2022.herokuapp.com/api/cities`);
     setdata(data.cityList);
   };
   useEffect(() => {
