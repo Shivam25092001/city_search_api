@@ -1,20 +1,18 @@
 .Navbar{
     display: flex;
-    flex-direction: column;
-    width: 100vw;
-    align-content: center;
-    justify-content: space-around;
-    /* box-shadow: 0px -5px 70px 2px #dfdfdf; */
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0%;
     z-index: +10;
-    background-color: white;
+    background-color: rgba(161, 194, 255, 0);
+    flex-direction: column;
+    width: 100vw;
+    align-content: center;
+    justify-content: space-around;
 }
 .logo{
     font-family: 'Fredoka', sans-serif;
     font-size: 5vh;
-    /* padding-left: 10px; */
     grid-column: 2/3;
 }
 .login-info{
@@ -23,6 +21,17 @@
 .login-info > a{
     text-decoration: none;
     color: black;
+}
+.nav-links{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
 }
 .top-section{
     width: 100%;
@@ -38,17 +47,6 @@
     display: flex;
     justify-content: center;
         
-}
-.nav-links{
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
-    align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-
 }
 .nav-links a{
     text-decoration: none;
@@ -184,7 +182,7 @@
         width: 100vw;
         position: absolute;
         top: 10vh;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         z-index: 5;
     }
     .bottom-section-active ul{
